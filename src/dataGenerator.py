@@ -48,13 +48,27 @@ class DataGenerator(object):
                 break
         return treatment
 
+    #def getAge(self, ageType):
+    #"""from -1 to 1."""
+    #    if ageType == -1:
+    #        age = np.array([round(-x/25, 2) for x in range(1, 26)]*int(self.Nyoung/25))
+    #        np.random.shuffle(age)
+    #        return age
+    #    elif ageType == 1:
+    #        age = np.array([round(x/25, 2) for x in range(1, 26)]*int(self.Nold/25))
+    #        np.random.shuffle(age)
+    #        return age
+
     def getAge(self, ageType):
+        """from 0 to 1"""
         if ageType == -1:
             age = np.array([round(-x/25, 2) for x in range(1, 26)]*int(self.Nyoung/25))
+            age = -age / 2
             np.random.shuffle(age)
             return age
         elif ageType == 1:
             age = np.array([round(x/25, 2) for x in range(1, 26)]*int(self.Nold/25))
+            age = age / 2 + 0.5
             np.random.shuffle(age)
             return age
 
