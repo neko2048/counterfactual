@@ -95,7 +95,7 @@ class DataGenerator(object):
         return coefficient['A'] * data['Sex'] + \
                coefficient['B'] * treatment + \
                coefficient['C'] * data['Age'] + \
-               coefficient['D'] * data['Age'] * data['Sex']
+               coefficient['D'] * data['Sex'] * (data['Age'] + treatment)
 
     def getOutcome3(self, data, coefficient, CF=False):
         if CF:
