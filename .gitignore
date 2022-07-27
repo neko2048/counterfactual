@@ -1,5 +1,6 @@
 *.txt
 *.npy
 *.pth
+*.csv
 /trashcan/
 /IHDPstudy/ihdp_csv_1-1000/
