@@ -3,7 +3,9 @@
 - Case 1: Apparent Imbalanced
 - Case 2: Apparent Imbalanced
 - Case 3: Genuine Imbalanced
+
 ====================================
+
 * adjustedRankTest.ipynb: Statistically verify the feasibility of detecting the interaction term.
 * dataGeneration-T01.ipynb: generate data with treatment = 0/1.
 * dataGeneration.ipynb: generate data with treatment = -1/1.
